@@ -263,7 +263,7 @@ const SignUp = () => {
             onBlur={(event) => handleFocusOut(fieldNames.password, event)}
             error={!fieldStatuses.password}
             helperText={
-              !fieldStatuses.password && "Please enter your password."
+              !fieldStatuses.password && "Please enter a valid password."
             }
             marginTop="12px"
           />
