@@ -1,0 +1,118 @@
+@import "../../../constants/styles/colors";
+
+.SignUp {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  &__Info {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("../../../assets/images/Authentication/background.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 40px;
+
+    &__Logo {
+      width: 200px;
+      user-select: none;
+      cursor: pointer;
+      margin-left: -12px;
+    }
+
+    &__Text {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+      margin-top: 8px;
+
+      &__Primary {
+        color: $primary_color;
+      }
+    }
+  }
+
+  &__Actions {
+    width: 50vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__Wrapper {
+      max-width: 340px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__Title {
+        font-size: 2.4rem;
+        font-weight: 500;
+        margin-bottom: 36px;
+      }
+
+      &__ForgotPassword {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: $primary_color;
+        margin: 12px 0 24px 0;
+      }
+
+      &__Other {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+
+        &__Or {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          user-select: none;
+
+          &__Line {
+            background-color: #dadada;
+            width: 100%;
+            height: 1px;
+            position: absolute;
+          }
+
+          &__Text {
+            position: absolute;
+            height: 10px;
+            width: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $secondary_text_light_color;
+          }
+        }
+
+        &__SignIn {
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: $secondary_text_light_color;
+
+          &__Primary {
+            color: $primary_color;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

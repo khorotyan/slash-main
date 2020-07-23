@@ -1,0 +1,20 @@
+@import "../../../constants/styles/colors";
+
+.OutlineButton {
+  background-color: initial;
+  color: $primary_color;
+  border: 1px solid $primary_color;
+  border-radius: 4px;
+  padding: 0 26px;
+  height: 38px;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  font-size: 1.24rem;
+  font-weight: 500;
+  transition: 0.3s;
+
+  &:hover {
+    color: $primary_light_color;
+    border: 1px solid $primary_light_color;
+  }
+}

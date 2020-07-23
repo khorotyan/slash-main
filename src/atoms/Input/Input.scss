@@ -1,0 +1,42 @@
+@import "../../constants/styles/colors";
+
+.CustomInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__Input {
+    width: calc(100% - 40px);
+    font-size: 1.3rem;
+    font-family: inherit;
+    height: 46px;
+    border: 1px solid $border_color;
+    border-radius: 50px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.02);
+    outline: none;
+    transition: 0.3s;
+    padding: 0 20px;
+
+    &:focus {
+      border: 1px solid #949494;
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  &__HelperText {
+    font-size: 1.3rem;
+    color: $error_color;
+    margin: 6px 0 0 20px;
+  }
+
+  &__Input[error="1"] {
+    border: 1px solid $error_color;
+
+    &:focus {
+      border: 1px solid $error_color;
+    }
+  }
+}

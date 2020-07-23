@@ -1,0 +1,49 @@
+@import "../../constants/styles/colors";
+@import "../../constants/styles/variables";
+
+.Header {
+  height: $header_height;
+  width: 100vw;
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 1px solid $border_color;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: none;
+  padding: 4px 28px;
+  transition: 0.3s;
+
+  &__Left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__Logo {
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  &__Right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &__Wrapper {
+      display: flex;
+      align-items: center;
+      height: 88%;
+
+      &__Avatar {
+        cursor: pointer;
+        font-size: 1.3rem !important;
+        width: 36px !important;
+        height: 36px !important;
+        margin: 0 12px 0 6px;
+      }
+    }
+  }
+}
